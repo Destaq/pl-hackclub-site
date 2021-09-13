@@ -186,8 +186,8 @@
             and 3d modelling with Blender.
           </p>
           <p class="mt-4">
-            I'm fluent with 3 languages: English, Czech and Chinese. And I would
-            say that I understand a bit Japanese. I look forward to working with
+            I'm fluent in 3 languages: English, Czech and Chinese. And I would
+            say that I understand a bit of Japanese. I look forward to working with
             you in the club.
           </p>
         </div>
