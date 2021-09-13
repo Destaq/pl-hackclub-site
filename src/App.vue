@@ -128,10 +128,12 @@
           excited about teaching, connecting, and growing with you.
         </p>
         <p class="my-3">
-          We've both taken and passed the IGCSE Computer Science exam, and also spend a significant amount of time developing our tech skills at home.
+          We've both taken and passed the IGCSE Computer Science exam, and also
+          spend a significant amount of time developing our tech skills at home.
         </p>
         <p class="my-3">
-          You can read a bit more about our backgrounds here. And if you have any questions or concerns, feel free to reach out by email.
+          You can read a bit more about our backgrounds here. And if you have
+          any questions or concerns, feel free to reach out by email.
         </p>
       </div>
       <div class="mx-auto card bordered w-96 mb-4 md:mb-0 bg-base-200">
@@ -178,14 +180,16 @@
             David Sun
             <div class="badge mx-2 badge-secondary">12P</div>
           </h2>
-          <p>
-            Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
-            sit necessitatibus veritatis sed molestiae voluptates incidunt iure
-            sapiente.
+          <p class="mt-4">
+            Hello, my name is David Sun. I'm experienced with programming in
+            Python and building projects using Arduino. Currently learning C#
+            and 3d modelling with Blender.
           </p>
-          <div class="justify-end card-actions">
-            <button class="btn btn-secondary">More info</button>
-          </div>
+          <p class="mt-4">
+            I'm fluent with 3 languages: English, Czech and Chinese. And I would
+            say that I understand a bit Japanese. I look forward to working with
+            you in the club.
+          </p>
         </div>
       </div>
     </div>
