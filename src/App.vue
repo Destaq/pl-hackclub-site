@@ -107,7 +107,7 @@
           </p>
           <div class="flex mt-6">
             <a
-              href="mailto:pupil.simon.ilincev@parklane-is.com?cc=pupil.david.sun@parklane-is.com&subject=Dropping%20in%20for%20Hack%20Club&body=Hey%20Simon%20and%20David%2C%0D%0A%0D%0ACount%20me%20in%20for%20this%20Friday's%20PLIS%20Hack%20Club%20session!%20Looking%20forward%20to%20seeing%20you%20there."
+              href="mailto:pupil.simon.ilincev@parklane-is.com?cc=pupil.david.sun@parklane-is.com&subject=Dropping%20in%20for%20Hack%20Club&body=Hey%20Simon%20and%20David,%20count%20me%20in%20for%20this%20Friday's%20PLIS%20Hack%20Club%20session!%20Looking%20forward%20to%20seeing%20you%20there."
               class="btn btn-primary"
               >I'm Coming!</a
             >
@@ -187,8 +187,8 @@
           </p>
           <p class="mt-4">
             I'm fluent in 3 languages: English, Czech and Chinese. And I would
-            say that I understand a bit of Japanese. I look forward to working with
-            you in the club.
+            say that I understand a bit of Japanese. I look forward to working
+            with you in the club.
           </p>
         </div>
       </div>
@@ -279,11 +279,27 @@ export default {
   computed: {
     time() {
       var now = new Date();
-      var firstday = new Date(now.setDate(now.getDate() - now.getDay()));
-      var friday = new Date(now.setDate(now.getDate() - now.getDay() + 11)); // note: decrease by seven next week
+      var next_friday = new Date("9/24/2021");
+      next_friday.setHours(15, 30);
+
+      return next_friday - now;
+      
+      // to set it to the nearest friday
+      /* 
+      var today = new Date();
+
+      // get number of days to Friday
+      var dayNum = today.getDay();
+      var daysToFri = 5 - (dayNum < 5 ? dayNum : dayNum - 7);
+
+      // set as 15:30 friday
+      var friday = new Date(+today);
+      friday.setDate(friday.getDate() + daysToFri);
       friday.setHours(15, 30);
 
-      return friday - firstday;
+      return friday - today
+      */
+
     },
   },
 };
