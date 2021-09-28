@@ -111,10 +111,6 @@
               class="btn btn-primary"
               >I'm Coming!</a
             >
-            <p class="italic text-sm my-auto ml-2">
-              There's free pizza <span class="not-italic">&#127829;</span>, you
-              should!
-            </p>
           </div>
         </div>
       </div>
@@ -233,7 +229,6 @@ class TypeWriter {
       // Increase speed by half when deleting
       typeSpeed /= 2;
     }
-
     // If word is complete
     if (!this.isDeleting && this.txt === fullTxt) {
       // Make pause at end
@@ -279,27 +274,24 @@ export default {
   computed: {
     time() {
       var now = new Date();
-      var next_friday = new Date("9/24/2021");
-      next_friday.setHours(15, 30);
 
-      return next_friday - now;
+      // first-time only setting
+      // var next_friday = new Date("9/24/2021");
+      // next_friday.setHours(15, 30);
+      // return next_friday - now;
       
-      // to set it to the nearest friday
-      /* 
-      var today = new Date();
-
+      
+      // to set it to the nearest friday (normal)
       // get number of days to Friday
-      var dayNum = today.getDay();
+      var dayNum = now.getDay();
       var daysToFri = 5 - (dayNum < 5 ? dayNum : dayNum - 7);
 
       // set as 15:30 friday
-      var friday = new Date(+today);
+      var friday = new Date(+now);
       friday.setDate(friday.getDate() + daysToFri);
       friday.setHours(15, 30);
 
-      return friday - today
-      */
-
+      return friday - now;
     },
   },
 };
